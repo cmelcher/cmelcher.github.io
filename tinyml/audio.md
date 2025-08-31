@@ -1,9 +1,8 @@
 ---
-layout: page
-title: "Audio Work"
+layout: single
+title: "Audio Project"
 permalink: /tinyml/audio/
+author_profile: true
 ---
 
-# Future Work in TinyML
-
-insert
+Details coming soon.
