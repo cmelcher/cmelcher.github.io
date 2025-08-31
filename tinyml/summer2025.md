@@ -1,9 +1,8 @@
 ---
-layout: page
+layout: single
 title: "Summer 2025 Project"
 permalink: /tinyml/summer2025/
+author_profile: true
 ---
 
-# Summer 2025 Project
-
-My write-up goes here...
+Write-up coming soon.
