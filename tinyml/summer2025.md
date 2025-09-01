@@ -5,8 +5,6 @@ permalink: /tinyml/summer2025/
 ---
 
 **Advisor:** Dr. Erfan Yazdandoost Hamedani  
-**Student:** Cody Melcher (PhD, Systems & Industrial Engineering, University of Arizona)  
-
 ---
 
 ## What is Arduino?  
