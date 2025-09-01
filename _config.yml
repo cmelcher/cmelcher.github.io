@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Cody Melcher"
+title                    : #enter
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -23,9 +23,9 @@ repository               : "cmelcher/cmelcher.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : #
+  name             : "Cody Melcher"
   pronouns         : # example: "she/her"  
-  bio              : #insert here
+  bio              : "PhD Candidate in Statistics, Systems and Industrial Engineering"
   location         : "Tucson, AZ"
   employer         : "University of Arizona"
   uri              : # URL
