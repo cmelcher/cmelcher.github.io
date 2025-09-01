@@ -40,8 +40,10 @@ Train a classifier to distinguish between **stars** and **circles** using images
 - Each card was placed in front of the Arduino camera.  
 - Images were collected using a Python script (`reading_image.py`) and labeled (1 = star, 0 = circle).  
 
-![Star vs circle cards](/assets/tinyml/summer2025/stars-vs-circles.jpg)  
-*Example of card used for Task 1.*  
+<figure style="text-align: center;">
+  <img src="/assets/tinyml/summer2025/stars-vs-circles.jpg" alt="Star vs circle cards" style="width:40%;">
+  <figcaption><em>Example of card used for Task 1.</em></figcaption>
+</figure>
 
 ### Training the Model  
 - The script `training_binary.py` was used to learn from the labeled images.  
