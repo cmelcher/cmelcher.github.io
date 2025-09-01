@@ -12,7 +12,7 @@ permalink: /tinyml/summer2025/
 The **Arduino Nano 33 BLE Sense** is a low-power microcontroller that integrates a tiny camera and multiple sensors (motion, acceleration, sound, rotation).  
 It can be programmed directly via the **Arduino IDE** and supports deploying small-scale machine learning models.  
 
-![Arduino kit](/assets/tinyml/summer2025/arduinopic.jpeg)  
+<img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino kit" style="width:60%;">
 *Arduino Nano 33 BLE Sense used in our experiments.*  
 
 ---
