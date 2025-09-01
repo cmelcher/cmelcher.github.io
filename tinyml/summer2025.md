@@ -1,59 +1,96 @@
 ---
 layout: single
-title: "Summer 2025 Project: Decision-Making with Optimization, Neural Networks, and TinyML"
+title: "Summer 2025 Project: Optimization, Neural Networks, and TinyML"
 permalink: /tinyml/summer2025/
 ---
 
-# Summer 2025 Project: Decision-Making with Optimization, Neural Networks, and TinyML  
+# Summer 2025 Project: Optimization, Neural Networks, and TinyML  
 
-**Advisors:** Dr. Erfan Yazdandoost Hamedani (Assistant Professor, University of Arizona)  
+**Advisor:** Dr. Erfan Yazdandoost Hamedani  
 **Student:** Cody Melcher (PhD, Systems & Industrial Engineering, University of Arizona)  
 
 ---
 
-## Overview  
+## What is Arduino?  
 
-This summer project introduced high-school students to **decision-making, optimization, and machine learning** through interactive activities on the **Arduino Nano 33 BLE Sense (TinyML kit)**.  
-The goal was to make advanced concepts like gradient descent, neural networks, and classification accessible in a hands-on way.  
+The **Arduino Nano 33 BLE Sense** is a low-power microcontroller that integrates a tiny camera and multiple sensors (motion, acceleration, sound, rotation).  
+It can be programmed directly via the **Arduino IDE** and supports deploying small-scale machine learning models.  
 
-We developed **slides, demos, and guided experiments** that connected core optimization methods with real machine learning tasks that could be run directly on a tiny embedded device.  
-
----
-
-## Key Learning Modules  
-
-- **What is Optimization?**  
-  Optimization as “finding the best solution,” illustrated with real-world examples such as planning the fastest route under budget constraints. Students learned about derivatives, gradients, and why step size matters in gradient descent.  
-
-- **Binary Classification Basics**  
-  Using healthcare examples (benign vs. malignant tumors), we explained how computers learn from labeled data, minimize error with loss functions, and improve predictions.  
-
-- **Neural Networks and Deep Learning**  
-  Students learned how networks are built from layers of neurons, how training works via gradient descent, and how deeper networks learn progressively more abstract features.  
+![Arduino kit](/assets/tinyml/summer2025/arduinopic.jpeg)  
+*Arduino Nano 33 BLE Sense used in our experiments.*  
 
 ---
 
-## Experiments  
+## What is TinyML?  
 
-### Experiment I: Binary Shape Classification  
-Students drew **stars and circles** on sticker cards, captured images with the Arduino’s camera, and trained a simple classifier.  
-- Explored how **step size (learning rate)** affects training speed and stability.  
-- Tested trained models on new examples and reflected on classification accuracy.  
+**TinyML** refers to deploying machine learning models on resource-constrained hardware like microcontrollers.  
+- Models must be **compressed** (small number of layers and neurons).  
+- They run **on-device**, without needing a cloud connection.  
+- Applications include embedded vision, speech recognition, and sensor data processing.  
 
-### Experiment II: Handwritten Digit Recognition (MNIST)  
-Students trained and deployed a **digit recognition model** on the Arduino:  
-- Trained with a provided Python script and uploaded the model to the board.  
-- Drew digits 0–9 on cards, then tested classification in real time.  
-- Experimented with neural network design: up to **4 hidden layers** and **900 total neurons**, trying different optimizers (Adam, SGD, RMSProp) and activation functions (ReLU, tanh, sigmoid).  
+In this project, TinyML enabled **real-time classification** of shapes and handwritten digits directly on the Arduino board.  
+
+---
+
+## Task 1: Binary Shape Classification  
+
+### Goal  
+Train a classifier to distinguish between **stars** and **circles** using images captured by the Arduino’s camera.  
+
+### Building the Dataset  
+- Students drew **stars and circles** on sticker cards.  
+- Each card was placed in front of the Arduino camera.  
+- Images were collected using a Python script (`reading_image.py`) and labeled (1 = star, 0 = circle).  
+
+![Star vs circle cards](/assets/tinyml/summer2025/stars-vs-circles.jpg)  
+*Example of card used for Task 1.*  
+
+### Training the Model  
+- The script `training_binary.py` was used to learn from the labeled images.  
+- We implemented **gradient descent** as the optimization method.  
+- Students experimented with **different learning rates** (`lr = 0.1, 1, 10`) to observe convergence speed and stability.  
+
+### Testing and Results  
+- The trained model was tested on new cards.  
+- Performance was evaluated by prediction accuracy and error patterns.  
+
+![Arduino camera setup](/assets/tinyml/summer2025/kitsetup1.jpeg)  
+*Data collection and testing pipeline with Arduino camera.*  
+
+---
+
+## Task 2: Handwritten Digit Classification (MNIST Deployment)  
+
+### Goal  
+Deploy a neural network on Arduino to classify handwritten digits (0–9).  
+
+### Model Design and Constraints  
+- Base training done in Python (`training_MNIST.py`).  
+- Model exported and uploaded to Arduino (`handwritten_digit_recognition.ino`).  
+- To fit TinyML constraints:  
+  - **Maximum:** 4 hidden layers  
+  - **Maximum neurons:** 900 total  
+  - Tested optimizers: Adam, SGD, RMSprop  
+  - Activation functions: ReLU, tanh, sigmoid  
+
+### Building the Dataset  
+- Digits (0–9) drawn on cards and placed under Arduino’s camera.  
+- Data captured using reset + onboard buttons.  
+
+![Digit cards](/assets/tinyml/summer2025/numbers.jpg)  
+*Example of handwritten digit card used for Task 2.*  
+
+### Testing and Results  
+- The model classified digits in real-time, showing predictions in the Arduino IDE serial monitor.  
+- Accuracy depended on architecture and optimizer choices.  
+- Students observed trade-offs between **model complexity** and **hardware constraints**.  
 
 ---
 
 ## Outcomes  
 
-- Students saw firsthand how **optimization powers decision-making** in machine learning.  
-- The TinyML kit provided a tangible way to connect theory with practice: collecting data, training models, and testing predictions on real devices.  
-- Activities encouraged exploration, critical thinking, and experimentation with parameters (learning rate, architecture, optimizer choice).  
+This project demonstrated how optimization and neural networks can be taught and deployed in **embedded machine learning** settings.  
+- **Task 1** (binary classification) introduced gradient descent and loss minimization in a simple, visual way.  
+- **Task 2** (digit classification) extended to deeper models and highlighted constraints of TinyML.  
 
-
----
-
+Overall, this hands-on project connected **optimization theory** with **practical deployment** on embedded devices.  
