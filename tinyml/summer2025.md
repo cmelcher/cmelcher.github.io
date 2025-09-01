@@ -13,9 +13,12 @@ The **Arduino Nano 33 BLE Sense** is a low-power microcontroller that integrates
 It can be programmed directly via the **Arduino IDE** and supports deploying small-scale machine learning models.  
 
 <figure style="text-align: center;">
-  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino kit" style="width:40%;">
+  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" 
+       alt="Arduino Nano 33 BLE Sense kit" 
+       style="width:40%;">
   <figcaption><em>Arduino Nano 33 BLE Sense used in our experiments.</em></figcaption>
 </figure>
+
 
 ---
 
@@ -41,9 +44,12 @@ Train a classifier to distinguish between **stars** and **circles** using images
 - Images were collected using a Python script (`reading_image.py`) and labeled (1 = star, 0 = circle).  
 
 <figure style="text-align: center;">
-  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card" style="width:40%;">
+  <img src="/assets/tinyml/summer2025/star.jpg" 
+       alt="Card with star used for Task 1 classification" 
+       style="width:40%;">
   <figcaption><em>Example of card used for Task 1.</em></figcaption>
 </figure>
+
 
 ### Training the Model  
 - The script `training_binary.py` was used to learn from the labeled images.  
