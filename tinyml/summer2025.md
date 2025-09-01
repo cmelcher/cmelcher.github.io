@@ -39,7 +39,7 @@ Key features:
 - Run entirely **on-device** without cloud or internet.  
 - Applications include **embedded vision**, **speech recognition**, and **sensor data processing**.  
 
-In this camp, TinyML enabled **real-time classification** of shapes and handwritten digits directly on the Arduino board:contentReference[oaicite:2]{index=2}.  
+In this camp, TinyML enabled **real-time classification** of shapes and handwritten digits directly on the Arduino board.
 
 ---
 
@@ -52,7 +52,7 @@ Train a simple classifier to distinguish between **stars** and **circles** using
 - Students created **sticker cards** with stars and circles.  
 - Each card was placed in front of the Arduino camera.  
 - Images were captured using a Python script (`reading_image.py`).  
-- Labels were assigned (`1 = star`, `0 = circle`):contentReference[oaicite:3]{index=3}.  
+- Labels were assigned (`1 = star`, `0 = circle`)
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/star.jpg" 
@@ -67,13 +67,12 @@ Train a simple classifier to distinguish between **stars** and **circles** using
 - Students experimented with different learning rates (`lr = 0.1, 1, 10`).  
 - This showed how **step size** impacts convergence:  
   - Too small → slow learning.  
-  - Too large → unstable or diverging:contentReference[oaicite:4]{index=4}.  
+  - Too large → unstable or diverging.
 
 ### Testing and Results  
 - Models were tested on new cards and even borrowed cards from peers.  
 - Accuracy was measured by correct predictions vs. errors.  
-- Students reflected on: Which shapes were harder to classify? Why?:contentReference[oaicite:5]{index=5}  
-
+- Students reflected on: Which shapes were harder to classify? Why?:
 <p align="center">
   <img src="/assets/tinyml/summer2025/kitsetup1.jpeg" 
        alt="Arduino camera setup for data collection and testing" 
@@ -94,12 +93,12 @@ Deploy a **neural network** on Arduino to classify handwritten digits (0–9).
 - TinyML limits:  
   - ≤ **4 hidden layers**  
   - ≤ **900 neurons total**  
-- Students tried different optimizers (Adam, SGD, RMSprop) and activations (ReLU, tanh, sigmoid):contentReference[oaicite:6]{index=6}.  
+- Students tried different optimizers (Adam, SGD, RMSprop) and activations (ReLU, tanh, sigmoid).
 
 ### Building the Dataset  
 - Students drew digits (0–9) on cards.  
 - Each card was placed under the Arduino camera.  
-- Image capture required pressing **reset + onboard buttons**:contentReference[oaicite:7]{index=7}.  
+- Image capture required pressing **reset + onboard buttons**.  
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/numbers.jpg" 
@@ -114,7 +113,7 @@ Deploy a **neural network** on Arduino to classify handwritten digits (0–9).
 - Observations:  
   - Some digits were consistently harder to classify.  
   - Increasing model complexity could improve accuracy, but risked overfitting.  
-  - Trade-offs highlighted the challenge of deploying ML under **hardware constraints**:contentReference[oaicite:8]{index=8}:contentReference[oaicite:9]{index=9}.  
+  - Trade-offs highlighted the challenge of deploying ML under **hardware constraints**.
 
 ---
 
