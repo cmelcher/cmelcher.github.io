@@ -13,7 +13,7 @@ The **Arduino Nano 33 BLE Sense** is a low-power microcontroller that integrates
 It can be programmed directly via the **Arduino IDE** and supports deploying small-scale machine learning models.  
 
 <p align="center">
-  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:40%;"><br>
+  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:30%;"><br>
   <em>Arduino Nano 33 BLE Sense used in our experiments.</em>
 </p>
 
@@ -41,12 +41,12 @@ Train a classifier to distinguish between **stars** and **circles** using images
 - Each card was placed in front of the Arduino camera.  
 - Images were collected using a Python script (`reading_image.py`) and labeled (1 = star, 0 = circle).  
 
-<figure style="text-align: center;">
+<p align="center">
   <img src="/assets/tinyml/summer2025/star.jpg" 
        alt="Card with star used for Task 1 classification" 
-       style="width:40%;">
-  <figcaption><em>Example of card used for Task 1.</em></figcaption>
-</figure>
+       style="width:30%;"><br>
+  <em>Example of card used for Task 1.</em>
+</p>
 
 
 ### Training the Model  
@@ -58,8 +58,12 @@ Train a classifier to distinguish between **stars** and **circles** using images
 - The trained model was tested on new cards.  
 - Performance was evaluated by prediction accuracy and error patterns.  
 
-![Arduino camera setup](/assets/tinyml/summer2025/kitsetup1.jpeg)  
-*Data collection and testing pipeline with Arduino camera.*  
+<p align="center">
+  <img src="/assets/tinyml/summer2025/kitsetup1.jpeg" 
+       alt="Arduino camera setup for data collection and testing" 
+       style="width:30%;"><br>
+  <em>Data collection and testing pipeline with Arduino camera.</em>
+</p>
 
 ---
 
@@ -81,8 +85,12 @@ Deploy a neural network on Arduino to classify handwritten digits (0–9).
 - Digits (0–9) drawn on cards and placed under Arduino’s camera.  
 - Data captured using reset + onboard buttons.  
 
-![Digit cards](/assets/tinyml/summer2025/numbers.jpg)  
-*Example of handwritten digit card used for Task 2.*  
+<p align="center">
+  <img src="/assets/tinyml/summer2025/numbers.jpg" 
+       alt="Handwritten digit cards used for Task 2 classification" 
+       style="width:30%;"><br>
+  <em>Example of handwritten digit card used for Task 2.</em>
+</p>
 
 ### Testing and Results  
 - The model classified digits in real-time, showing predictions in the Arduino IDE serial monitor.  
