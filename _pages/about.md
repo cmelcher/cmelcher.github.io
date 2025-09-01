@@ -4,7 +4,6 @@ title: Cody Melcher
 permalink: /
 ---
 
-# Cody Melcher  
 PhD Candidate in Statistics and Optimization  
 University of Arizona 
 
