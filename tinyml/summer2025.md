@@ -5,7 +5,6 @@ permalink: /tinyml/summer2025/
 ---
 
 **Advisor:** Dr. Erfan Yazdandoost Hamedani  
-**Student Lead:** Cody Melcher  
 
 ---
 
