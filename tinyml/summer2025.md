@@ -4,8 +4,6 @@ title: "Summer 2025 Project: Optimization, Neural Networks, and TinyML"
 permalink: /tinyml/summer2025/
 ---
 
-# Summer 2025 Project: Optimization, Neural Networks, and TinyML  
-
 **Advisor:** Dr. Erfan Yazdandoost Hamedani  
 **Student:** Cody Melcher (PhD, Systems & Industrial Engineering, University of Arizona)  
 
