@@ -41,7 +41,7 @@ Train a classifier to distinguish between **stars** and **circles** using images
 - Images were collected using a Python script (`reading_image.py`) and labeled (1 = star, 0 = circle).  
 
 <figure style="text-align: center;">
-  <img src="/assets/tinyml/summer2025/stars-vs-circles.jpg" alt="Star vs circle cards" style="width:40%;">
+  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card" style="width:40%;">
   <figcaption><em>Example of card used for Task 1.</em></figcaption>
 </figure>
 
