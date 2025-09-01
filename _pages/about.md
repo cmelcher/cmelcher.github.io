@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Cody Melcher
+title: 
 permalink: /
 ---
 
