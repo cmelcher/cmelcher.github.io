@@ -5,9 +5,7 @@ permalink: /tinyml/
 author_profile: true
 ---
 
-Welcome to my TinyML projects!
-
-Here are the sub-pages you can explore:
+Selected TinyML Projects:
 
 - [Summer 2025 Project]({{ '/tinyml/summer2025/' | relative_url }})
 - [Audio Project]({{ '/tinyml/audio/' | relative_url }})
