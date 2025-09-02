@@ -10,19 +10,16 @@ permalink: /tinyml/summer2025/
 
 ## Context
 
-This project was part of a **one-day summer camp for high school students in Tucson**.  
-The camp introduced participants to engineering concepts through hands-on activities that combined **optimization, neural networks, and TinyML**.  
-Students worked directly with Arduino kits to explore how mathematical ideas (like gradients and optimization) power real-world machine learning applications.  
+This project session was part of a one-day science and engineering summer camp for high school students in Tucson. Our goal was to introduce students, without assuming prior math or computing background, to some core ideas from calculus, optimization, and scientific computing. Through two guided activities, they explored how concepts like gradients and optimization drive modern machine learning. Students built and tested small classification models directly on Arduino Nano 33 BLE Sense kits, gaining experience with how math and computing ideas translate directly into real world applications.
 
 ---
 
 ## What is Arduino?  
 
-The **Arduino Nano 33 BLE Sense** is a low-power microcontroller designed for embedded applications.  
-Key features:  
+The **Arduino Nano 33 BLE Sense** is a small, low-power microcontroller designed for embedded applications. The device comes with a variety of sensors that make it ideal for machine learning projects:
 - Built-in camera and multiple sensors (motion, acceleration, rotation, sound).  
-- Programs can be written in the **Arduino IDE**.  
-- Supports **TinyML** deployment, enabling on-device inference.  
+- Programs can be written in a dedicated IDE.   
+- Main use is TinyML deployment, enabling on-device inference with low energy and resource requirements.  
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:30%;"><br>
@@ -33,13 +30,12 @@ Key features:
 
 ## What is TinyML?  
 
-**TinyML** = *Tiny Machine Learning* → deploying ML models on microcontrollers.  
-- Models must be **small** (few layers, limited neurons).  
-- Run entirely **on-device** without cloud or internet.  
-- Applications include **embedded vision**, **speech recognition**, and **sensor data processing**.  
+TinyMl (Tiny Machine Learning) is an environment for deploying ML models on microcontrollers. TinyML takes the learning methods that usually run on powerful GPUs and CPUs and compresses them to work on small, low-power devices. 
+- Models must be compact (few layers, limited total number of neurons).  
+- Models run directly on the device, without needing cloud interaction. This makes computation more efficient and helps with privacy considerations.   
+- Applications include embedded computer vision and speech recognition.
 
-In this camp, TinyML enabled **real-time classification** of shapes and handwritten digits directly on the Arduino board.
-
+In this session, students used TinyML to classify shapes and handwritten digits in real time directly on the Arduino board. 
 ---
 
 ## Task 1: Binary Shape Classification  
@@ -50,7 +46,7 @@ Train a simple classifier to distinguish between **stars** and **circles** using
 ### Building the Dataset  
 - Students created **sticker cards** with stars and circles.  
 - Each card was placed in front of the Arduino camera.  
-- Images were captured using a Python script (`reading_image.py`).  
+- Images were captured using a Python script (`reading_image.py`) pre-written by Dr. Yazdandoost Hamedani and myself.  
 - Labels were assigned (`1 = star`, `0 = circle`)
 
 <p align="center">
@@ -63,8 +59,8 @@ Train a simple classifier to distinguish between **stars** and **circles** using
 ### Training the Model  
 - Training was done with `training_binary.py`.  
 - The algorithm used **gradient descent** to minimize a loss function.  
-- Students experimented with different learning rates (`lr = 0.1, 1, 10`).  
-- This showed how **step size** impacts convergence:  
+- We had the students experimented with different learning rates (`lr = 0.1, 1, 10`) to test how the classification changed.  
+- This demonstrated how step size choice impacts convergence to a solution:  
   - Too small → slow learning.  
   - Too large → unstable or diverging.
 
