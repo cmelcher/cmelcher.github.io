@@ -35,45 +35,52 @@ TinyMl (Tiny Machine Learning) is an environment for deploying ML models on micr
 - Models run directly on the device, without needing cloud interaction. This makes computation more efficient and helps with privacy considerations.   
 - Applications include embedded computer vision and speech recognition.
 
-In this session, students used TinyML to classify shapes and handwritten digits in real time directly on the Arduino board. 
+In this session, students used TinyML to classify shapes and handwritten digits in real time directly on the Arduino board.  
+
 ---
 
-## Task 1: Binary Shape Classification  
+## Task 1: Classifying Stars and Circles  
 
-### Goal  
-Train a simple classifier to distinguish between **stars** and **circles** using the Arduino camera.  
+In our first activity, students built a simple image classifier using the Arduino Nano 33 BLE Sense.  
+The goal was to train a model that could recognize whether a drawing was a **star** or a **circle**.  
 
-### Building the Dataset  
-- Students created **sticker cards** with stars and circles.  
-- Each card was placed in front of the Arduino camera.  
-- Images were captured using a Python script (`reading_image.py`) pre-written by Dr. Yazdandoost Hamedani and myself.  
-- Labels were assigned (`1 = star`, `0 = circle`)
+### Step 1: Create a Dataset  
+Students drew their own stars and circles on sticker cards. These cards were then placed over the Arduino’s built-in camera to capture training images.  
 
-<p align="center">
-  <img src="/assets/tinyml/summer2025/star.jpg" 
-       alt="Card with star used for Task 1 classification" 
-       style="width:30%;"><br>
-  <em>Example of card used for Task 1.</em>
-</p>
+<p align="center">  
+  <img src="/assets/tinyml/star_card.jpg" alt="Star card example" width="250"/>  
+  <br><em>Example student star drawing used for training.</em>  
+</p>  
 
-### Training the Model  
-- Training was done with `training_binary.py`.  
-- The algorithm used **gradient descent** to minimize a loss function.  
-- We had the students experimented with different learning rates (`lr = 0.1, 1, 10`) to test how the classification changed.  
-- This demonstrated how step size choice impacts convergence to a solution:  
-  - Too small → slow learning.  
-  - Too large → unstable or diverging.
+### Step 2: Capture Images  
+A Python script (`reading_image.py`) was used to capture images from the Arduino and save them with labels.  
+Students updated the label parameter to distinguish between stars and circles.  
 
-### Testing and Results  
-- Models were tested on new cards and even borrowed cards from peers.  
-- Accuracy was measured by correct predictions vs. errors.  
-- Students reflected on: Which shapes were harder to classify? Why?:
-<p align="center">
-  <img src="/assets/tinyml/summer2025/kitsetup1.jpeg" 
-       alt="Arduino camera setup for data collection and testing" 
-       style="width:30%;"><br>
-  <em>Data collection and testing pipeline with Arduino camera.</em>
-</p>
+<p align="center">  
+  <img src="/assets/tinyml/reading_image.png" alt="Python script for image capture" width="500"/>  
+  <br><em>Script for capturing and labeling images.</em>  
+</p>  
+
+### Step 3: Train the Model  
+Once the dataset was ready, students ran a second script (`training_binary.py`) to train a binary classifier.  
+They also experimented with the **learning rate** to see how step size affects optimization and convergence.  
+
+<p align="center">  
+  <img src="/assets/tinyml/training_binary.png" alt="Training script" width="500"/>  
+  <br><em>Training script for binary classification.</em>  
+</p>  
+
+### Step 4: Test the Model  
+Finally, students tested their models using new drawings, including some borrowed from classmates.  
+A testing script (`testing_binary.py`) displayed predictions in real time, showing whether the model classified the card as a star or a circle.  
+
+<p align="center">  
+  <img src="/assets/tinyml/testing_binary.png" alt="Testing script" width="500"/>  
+  <br><em>Testing script used to evaluate classification results.</em>  
+</p>  
+
+This activity introduced students to the **full machine learning workflow**—from data collection and labeling to training, optimization, and evaluation—all on a tiny device.  
+
 
 ---
 
