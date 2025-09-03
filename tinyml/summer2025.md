@@ -45,8 +45,8 @@ In this session, students used TinyML to classify shapes and handwritten digits 
 
 ## Task 1: Classifying Stars and Circles  
 
-In our first activity, students built a simple image classifier using the Arduino Nano 33 BLE Sense.  
-The goal was to train a model that could recognize whether a drawing was a **star** or a **circle**.  
+In the first activity, students worked with a simple binary image classifier using the Arduino Nano 33 BLE Sense.  
+The goal was to train a model that could accurately predict whether a drawing was a **star** or a **circle**.  
 
 ### Step 1: Create a Dataset  
 Students drew their own stars and circles on sticker cards. These cards were then placed over the Arduino’s built-in camera to capture training images.  
@@ -57,7 +57,7 @@ Students drew their own stars and circles on sticker cards. These cards were the
 </p>  
 
 ### Step 2: Capture Images  
-A Python script (`reading_image.py`) was used to capture images from the Arduino and save them with labels.  
+A pre-written Python script (`reading_image.py`) was used to capture images from the Arduino and save them with labels.  
 Students updated the label parameter to distinguish between stars and circles.  
 
 <p align="center">  
@@ -80,7 +80,7 @@ A testing script (`testing_binary.py`) displayed predictions in real time, showi
   <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" style="width:40%;"><br><em>Testing script used to evaluate classification results.</em>  
 </p>  
 
-This activity introduced students to the **full machine learning workflow**—from data collection and labeling to training, optimization, and evaluation—all on a tiny device.  
+Students repeated the testing step several times, recording their model's overall accuracy. This activity introduced students to the **full machine learning workflow**:data collection and labeling, to training, optimization, and evaluation.  
 
 
 ---
@@ -88,20 +88,20 @@ This activity introduced students to the **full machine learning workflow**—fr
 ## Task 2: Handwritten Digit Classification (MNIST on Arduino)  
 
 ### Goal  
-Deploy a **neural network** on Arduino to classify handwritten digits (0–9).  
+Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to recognize handwritten digits (0–9) in real time.  
 
 ### Model Design and Constraints  
-- Base model trained in Python (`training_MNIST.py`).  
-- Exported and uploaded to Arduino (`handwritten_digit_recognition.ino`).  
-- TinyML limits:  
+- Models were first trained in Python (`training_MNIST.py`) and then exported to Arduino (`handwritten_digit_recognition.ino`).  
+- TinyML hardware limitations forced creative design choices:  
   - ≤ **4 hidden layers**  
   - ≤ **900 neurons total**  
-- Students tried different optimizers (Adam, SGD, RMSprop) and activations (ReLU, tanh, sigmoid).
+- Students experimented with different **optimizers** (Adam, SGD, RMSprop) and **activation functions** (ReLU, tanh, sigmoid) to balance accuracy and efficiency.  
 
 ### Building the Dataset  
-- Students drew digits (0–9) on cards.  
-- Each card was placed under the Arduino camera.  
-- Image capture required pressing **reset + onboard buttons**.  
+- Instead of using a pre-loaded dataset, students created their own:  
+  - Digits (0–9) were drawn on index cards.  
+  - Each card was placed under the Arduino’s camera.  
+  - Image capture was triggered by pressing the **reset + onboard buttons**.  
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/numbers.jpg" 
@@ -111,14 +111,14 @@ Deploy a **neural network** on Arduino to classify handwritten digits (0–9).
 </p>
 
 ### Testing and Results  
-- Models classified digits in real-time, with predictions displayed in the Arduino Serial Monitor.  
-- Students tested on a **set of 8–10 digit cards**.  
-- Observations:  
-  - Some digits were consistently harder to classify.  
-  - Increasing model complexity could improve accuracy, but risked overfitting.  
-  - Trade-offs highlighted the challenge of deploying ML under **hardware constraints**.
+- Predictions were displayed directly in the Arduino Serial Monitor.  
+- Each team tested their models on a **set of 8–10 digit cards**.  
+- Key takeaways:  
+  - Certain digits (like 4, 7, 9) were harder to classify consistently.  
+  - Larger networks improved accuracy but risked **overfitting** on the small dataset.  
+  - Students experienced first-hand the **trade-offs** of deploying ML under real-world hardware limits.  
 
----
+----
 
 ## Outcomes  
 
