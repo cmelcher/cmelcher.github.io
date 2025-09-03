@@ -22,7 +22,7 @@ The **Arduino Nano 33 BLE Sense** is a small, low-power microcontroller designed
 - Main use is TinyML deployment, enabling on-device inference with low energy and resource requirements.  
 
 <p align="center">
-  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:30%;"><br>
+  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:40%;"><br>
   <em>Arduino Nano 33 BLE Sense board.</em>
 </p>
 
@@ -37,7 +37,7 @@ TinyMl (Tiny Machine Learning) is an environment for deploying ML models on micr
 
 In this session, students used TinyML to classify shapes and handwritten digits in real time directly on the Arduino board.  
 <p align="center">
-  <img src="/assets/tinyml/summer2025/kitsetup0.jpeg" alt="kitsetup" style="width:30%;"><br>
+  <img src="/assets/tinyml/summer2025/kitsetup0.jpeg" alt="kitsetup" style="width:40%;"><br>
   <em>Setup for the two activities</em>
 </p>
 
@@ -52,7 +52,7 @@ The goal was to train a model that could recognize whether a drawing was a **sta
 Students drew their own stars and circles on sticker cards. These cards were then placed over the Arduino’s built-in camera to capture training images.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" width="250"/>  
+  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" style="width:40%;"><br>  
   <br><em>Example student star drawing used for training.</em>  
 </p>  
 
@@ -61,8 +61,7 @@ A Python script (`reading_image.py`) was used to capture images from the Arduino
 Students updated the label parameter to distinguish between stars and circles.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/reading_binary.png" alt="Python script for image capture" width="500"/>  
-  <br><em>Script for capturing and labeling images.</em>  
+  <img src="/assets/tinyml/summer2025/reading_binary.png" alt="Python script for image capture" style="width:40%;"><br><em>Script for capturing and labeling images.</em>  
 </p>  
 
 ### Step 3: Train the Model  
@@ -70,8 +69,7 @@ Once the dataset was ready, students ran a second script (`training_binary.py`) 
 They also experimented with the **learning rate** to see how step size affects optimization and convergence.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/training_binary.png" alt="Training script" width="500"/>  
-  <br><em>Training script for binary classification.</em>  
+  <img src="/assets/tinyml/summer2025/training_binary.png" alt="Training script" style="width:40%;"><br><em>Training script for binary classification.</em>  
 </p>  
 
 ### Step 4: Test the Model  
@@ -79,8 +77,7 @@ Finally, students tested their models using new drawings, including some borrowe
 A testing script (`testing_binary.py`) displayed predictions in real time, showing whether the model classified the card as a star or a circle.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" width="500"/>  
-  <br><em>Testing script used to evaluate classification results.</em>  
+  <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" style="width:40%;"><br><em>Testing script used to evaluate classification results.</em>  
 </p>  
 
 This activity introduced students to the **full machine learning workflow**—from data collection and labeling to training, optimization, and evaluation—all on a tiny device.  
