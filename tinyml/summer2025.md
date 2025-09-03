@@ -23,7 +23,7 @@ The **Arduino Nano 33 BLE Sense** is a small, low-power microcontroller designed
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:30%;"><br>
-  <em>Arduino Nano 33 BLE Sense used in our experiments.</em>
+  <em>Arduino Nano 33 BLE Sense board.</em>
 </p>
 
 ---
@@ -36,6 +36,10 @@ TinyMl (Tiny Machine Learning) is an environment for deploying ML models on micr
 - Applications include embedded computer vision and speech recognition.
 
 In this session, students used TinyML to classify shapes and handwritten digits in real time directly on the Arduino board.  
+<p align="center">
+  <img src="/assets/tinyml/summer2025/kitsetup0.jpeg" alt="kitsetup" style="width:30%;"><br>
+  <em>Setup for the two activities</em>
+</p>
 
 ---
 
