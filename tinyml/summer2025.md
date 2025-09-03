@@ -48,7 +48,7 @@ The goal was to train a model that could recognize whether a drawing was a **sta
 Students drew their own stars and circles on sticker cards. These cards were then placed over the Arduino’s built-in camera to capture training images.  
 
 <p align="center">  
-  <img src="/assets/tinyml/star_card.jpg" alt="Star card example" width="250"/>  
+  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" width="250"/>  
   <br><em>Example student star drawing used for training.</em>  
 </p>  
 
@@ -57,7 +57,7 @@ A Python script (`reading_image.py`) was used to capture images from the Arduino
 Students updated the label parameter to distinguish between stars and circles.  
 
 <p align="center">  
-  <img src="/assets/tinyml/reading_image.png" alt="Python script for image capture" width="500"/>  
+  <img src="/assets/tinyml/summer2025/reading_binary.png" alt="Python script for image capture" width="500"/>  
   <br><em>Script for capturing and labeling images.</em>  
 </p>  
 
@@ -66,7 +66,7 @@ Once the dataset was ready, students ran a second script (`training_binary.py`) 
 They also experimented with the **learning rate** to see how step size affects optimization and convergence.  
 
 <p align="center">  
-  <img src="/assets/tinyml/training_binary.png" alt="Training script" width="500"/>  
+  <img src="/assets/tinyml/summer2025/training_binary.png" alt="Training script" width="500"/>  
   <br><em>Training script for binary classification.</em>  
 </p>  
 
@@ -75,7 +75,7 @@ Finally, students tested their models using new drawings, including some borrowe
 A testing script (`testing_binary.py`) displayed predictions in real time, showing whether the model classified the card as a star or a circle.  
 
 <p align="center">  
-  <img src="/assets/tinyml/testing_binary.png" alt="Testing script" width="500"/>  
+  <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" width="500"/>  
   <br><em>Testing script used to evaluate classification results.</em>  
 </p>  
 
