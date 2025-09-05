@@ -10,7 +10,8 @@ permalink: /tinyml/summer2025/
 
 ## Context
 
-This project session was part of a one-day science and engineering summer camp for high school students in Tucson. Our goal was to introduce students, without assuming prior math or computing background, to some core ideas from calculus, optimization, and scientific computing. Through two guided activities, they explored how concepts like gradients and optimization drive modern machine learning. Students built and tested small classification models directly on Arduino Nano 33 BLE Sense kits, gaining experience with how math and computing ideas translate directly into real world applications.
+During the Summer of 2025, Dr. Yazdandoost Hamedani and I helped run a math and computing session for high school students from Tucson that aimed to introduce students to optimization, machine learning (ML), and coding. Our project session was part of a one-day science and engineering summer camp organized by the University of Arizona. The goal was to spark interest in math, computing, and engineering by showing how optimization and machine learning power technologies students encounter every day. Students came in with no assumed background in calculus or coding. We introduced key concepts like derivatives, gradients, classification (both binary and multi-class), neural networks, and microcontrollers. During the session we had students adjust and test pre-built small classification models (both binary and multi) directly on Arduino Nano 33 BLE Sense kits, gaining experience with how math and computing ideas translate directly into real world applications.
+
 
 ---
 
