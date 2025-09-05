@@ -27,7 +27,7 @@ The Arduino Nano 33 BLE Sense is a small, low-power microcontroller designed for
 - Main use is TinyML deployment, enabling on-device inference with low energy and resource requirements.  
 
 <p align="center">
-  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:55%;"><br>
+  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:40%;"><br>
   <em>Arduino Nano 33 BLE Sense board.</em>
 </p>
 
@@ -57,7 +57,7 @@ The goal was to train a model that could accurately predict whether a drawing wa
 Students drew 5–10 stars and 5–10 circles on sticker cards. These were placed one at a time over the Arduino’s built-in camera to capture training images.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" style="width:55%;"><br>  
+  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" style="width:40%;"><br>  
   <em>Example student star drawing used for training.</em>  
 </p>  
 
