@@ -10,11 +10,11 @@ permalink: /tinyml/summer2025/
 
 ## Context
 
-During the Summer of 2025, Dr. Yazdandoost Hamedani and I helped run a math and computing session for high school students from Tucson that aimed to introduce students to optimization, machine learning (ML), and coding. Our project session was part of a one-day science and engineering summer camp organized by the University of Arizona. 
+During the Summer of 2025, Dr. Yazdandoost Hamedani and I ran an optimization and computing session for high school students from Tucson that aimed to introduce students to optimization basics, machine learning (ML), and coding. Our project session was part of a one-day science and engineering summer camp organized by the University of Arizona. 
 
 The goal was to spark interest in math, computing, and engineering by showing how optimization and machine learning power technologies students encounter every day. Students came in with no assumed background in calculus or coding. 
 
-We introduced key concepts like derivatives, gradients, classification (both binary and multi-class), neural networks, and microcontrollers. During the session we had students adjust and test pre-built small classification models (both binary and multi) directly on Arduino Nano 33 BLE Sense kits, gaining experience with how math and computing ideas translate directly into real world applications.
+We introduced key concepts like derivatives, gradients, microcontrollers, classification (both binary and multi-class), and neural networks. During the session we had students adjust and test pre-built small classification models (both binary and multi) directly on Arduino Nano 33 BLE Sense kits, gaining experience with how math and computing ideas translate directly into real world applications.
 
 
 ---
@@ -37,7 +37,7 @@ The **Arduino Nano 33 BLE Sense** is a small, low-power microcontroller designed
 ## What is TinyML?  
 
 TinyMl (Tiny Machine Learning) is an environment for deploying ML models on microcontrollers. TinyML takes the learning methods that usually run on powerful GPUs and CPUs and compresses them to work on small, low-power devices. 
-- Models must be compact (few layers, limited total number of neurons). Tese restrictions mirrored real-world engineering: with limited hardware, every design choice matters.   
+- Models must be compact (few layers, limited total number of neurons). These restrictions mirror real-world engineering restrictions: with limited hardware, every design choice matters.   
 - Models run directly on the device, without needing cloud interaction. This makes computation more efficient and helps with privacy considerations.   
 - Applications include embedded computer vision and speech recognition.
 
@@ -69,7 +69,7 @@ A pre-written Python script (`reading_image.py`) captured images from the Arduin
 
 ### Step 3: Train the Model  
 Students then ran `training_binary.py` to train a binary classifier.  
-They experimented with the **learning rate**, observing how step size affects optimization and convergence.  
+We had the students experiment with changing the learning rate of the gradient descent method, observing how this choice affects optimization and convergence of the algorithm.  
 
 <p align="center">  
   <img src="/assets/tinyml/summer2025/training_binary.png" alt="Training script" style="width:40%;"><br><em>Training script for binary classification.</em>  
