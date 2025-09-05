@@ -29,12 +29,13 @@ The **Arduino Nano 33 BLE Sense** is a small, low-power microcontroller designed
   <em>Arduino Nano 33 BLE Sense board.</em>
 </p>
 
+
 ---
 
 ## What is TinyML?  
 
 TinyMl (Tiny Machine Learning) is an environment for deploying ML models on microcontrollers. TinyML takes the learning methods that usually run on powerful GPUs and CPUs and compresses them to work on small, low-power devices. 
-- Models must be compact (few layers, limited total number of neurons).  
+- Models must be compact (few layers, limited total number of neurons). Tese restrictions mirrored real-world engineering: with limited hardware, every design choice matters.   
 - Models run directly on the device, without needing cloud interaction. This makes computation more efficient and helps with privacy considerations.   
 - Applications include embedded computer vision and speech recognition.
 
@@ -46,30 +47,27 @@ In this session, students used TinyML to classify shapes and handwritten digits 
 
 ---
 
-## Task 1: Classifying Stars and Circles  
-
 In the first activity, students worked with a simple binary image classifier using the Arduino Nano 33 BLE Sense.  
 The goal was to train a model that could accurately predict whether a drawing was a **star** or a **circle**.  
 
 ### Step 1: Create a Dataset  
-Students drew their own stars and circles on sticker cards. These cards were then placed over the Arduino’s built-in camera to capture training images.  
+Students drew 5–10 stars and 5–10 circles on sticker cards. These were placed one at a time over the Arduino’s built-in camera to capture training images.  
 
 <p align="center">  
   <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" style="width:40%;"><br>  
-  <br><em>Example student star drawing used for training.</em>  
+  <em>Example student star drawing used for training.</em>  
 </p>  
 
 ### Step 2: Capture Images  
-A pre-written Python script (`reading_image.py`) was used to capture images from the Arduino and save them with labels.  
-Students updated the label parameter to distinguish between stars and circles.  
+A pre-written Python script (`reading_image.py`) captured images from the Arduino and saved them with labels. Students updated the label parameter to distinguish between stars and circles.  
 
 <p align="center">  
   <img src="/assets/tinyml/summer2025/reading_binary.png" alt="Python script for image capture" style="width:40%;"><br><em>Script for capturing and labeling images.</em>  
 </p>  
 
 ### Step 3: Train the Model  
-Once the dataset was ready, students ran a second script (`training_binary.py`) to train a binary classifier.  
-They also experimented with the **learning rate** to see how step size affects optimization and convergence.  
+Students then ran `training_binary.py` to train a binary classifier.  
+They experimented with the **learning rate**, observing how step size affects optimization and convergence.  
 
 <p align="center">  
   <img src="/assets/tinyml/summer2025/training_binary.png" alt="Training script" style="width:40%;"><br><em>Training script for binary classification.</em>  
@@ -77,16 +75,18 @@ They also experimented with the **learning rate** to see how step size affects o
 
 ### Step 4: Test the Model  
 Finally, students tested their models using new drawings, including some borrowed from classmates.  
-A testing script (`testing_binary.py`) displayed predictions in real time, showing whether the model classified the card as a star or a circle.  
+The `testing_binary.py` script displayed predictions in real time.  
 
 <p align="center">  
   <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" style="width:40%;"><br><em>Testing script used to evaluate classification results.</em>  
 </p>  
 
-Students repeated the testing step several times, recording their model's overall accuracy. This activity introduced students to the **full machine learning workflow**:data collection and labeling, to training, optimization, and evaluation.  
+**Reflection Questions:**  
+- Which step size led to faster or more stable convergence?  
+- How many images did your model classify correctly?  
+- Were some drawings harder to classify?  
 
-
----
+This activity introduced students to the **full machine learning workflow**: data collection, labeling, training, optimization, and evaluation.  
 
 ## Task 2: Handwritten Digit Classification (MNIST on Arduino)  
 
@@ -98,13 +98,13 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 - TinyML hardware limitations forced creative design choices:  
   - ≤ **4 hidden layers**  
   - ≤ **900 neurons total**  
-- Students experimented with different **optimizers** (Adam, SGD, RMSprop) and **activation functions** (ReLU, tanh, sigmoid) to balance accuracy and efficiency.  
+- Students experimented with different **optimizers** (Adam, SGD, RMSprop) and **activation functions** (ReLU, tanh, sigmoid).  
 
 ### Building the Dataset  
-- Instead of using a pre-loaded dataset, students created their own:  
+- Instead of a pre-loaded dataset, students created their own:  
   - Digits (0–9) were drawn on index cards.  
   - Each card was placed under the Arduino’s camera.  
-  - Image capture was triggered by pressing the **reset + onboard buttons**.  
+  - Image capture was triggered by pressing **reset + onboard buttons**.  
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/numbers.jpg" 
@@ -116,12 +116,19 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 ### Testing and Results  
 - Predictions were displayed directly in the Arduino Serial Monitor.  
 - Each team tested their models on a **set of 8–10 digit cards**.  
-- Key takeaways:  
-  - Certain digits (like 4, 7, 9) were harder to classify consistently.  
-  - Larger networks improved accuracy but risked **overfitting** on the small dataset.  
-  - Students experienced first-hand the **trade-offs** of deploying ML under real-world hardware limits.  
 
-----
+**Key Takeaways:**  
+- Certain digits (like 4, 7, 9) were harder to classify consistently.  
+- Larger networks improved accuracy but risked **overfitting** on the small dataset.  
+- Students saw how changes in neurons, layers, and optimizers impacted performance.  
+
+**Reflection Questions:**  
+- Which digits were hardest to classify?  
+- What happened when the first layer grew from 100 to 700 neurons?  
+- How many digits did your team classify correctly out of 10?  
+
+---
+
 
 ## Outcomes  
 
