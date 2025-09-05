@@ -4,7 +4,7 @@ title: "Summer 2025 Project: Optimization, Neural Networks, and TinyML"
 permalink: /tinyml/summer2025/
 ---
 
-**Advisor:** Dr. Erfan Yazdandoost Hamedani  
+Advisor: Dr. Erfan Yazdandoost Hamedani  
 
 ---
 
@@ -21,7 +21,7 @@ We introduced key concepts like derivatives, gradients, microcontrollers, classi
 
 ## What is Arduino?  
 
-The **Arduino Nano 33 BLE Sense** is a small, low-power microcontroller designed for embedded applications. The device comes with a variety of sensors that make it ideal for machine learning projects:
+The Arduino Nano 33 BLE Sense is a small, low-power microcontroller designed for embedded applications. The device comes with a variety of sensors that make it ideal for machine learning projects:
 - Built-in camera and multiple sensors (motion, acceleration, rotation, sound).  
 - Programs can be written in a dedicated IDE.   
 - Main use is TinyML deployment, enabling on-device inference with low energy and resource requirements.  
@@ -51,7 +51,7 @@ In this session, students used TinyML to classify shapes and handwritten digits 
 ## Task 1: Binary Classification
 
 In the first activity, students worked with a simple binary image classifier using the Arduino Nano 33 BLE Sense.  
-The goal was to train a model that could accurately predict whether a drawing was a **star** or a **circle**.  
+The goal was to train a model that could accurately predict whether a drawing was a star or a circle.  
 
 ### Step 1: Create a Dataset  
 Students drew 5–10 stars and 5–10 circles on sticker cards. These were placed one at a time over the Arduino’s built-in camera to capture training images.  
@@ -84,7 +84,7 @@ The `testing_binary.py` script displayed predictions in real time.
   <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" style="width:40%;"><br><em>Testing script used to evaluate classification results.</em>  
 </p>  
 
-**Reflection Questions:**  
+Reflection Questions:  
 - Which step size led to faster or more stable convergence?  
 - How many images did your model classify correctly?  
 - Were some drawings harder to classify?  
@@ -99,15 +99,15 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 ### Model Design and Constraints  
 - Models were first trained in Python (`training_MNIST.py`) and then exported to Arduino (`handwritten_digit_recognition.ino`).  
 - TinyML hardware limitations forced creative design choices:  
-  - ≤ **4 hidden layers**  
-  - ≤ **900 neurons total**  
+  - ≤ 4 hidden layers  
+  - ≤ 900 neurons total  
 - We allowed students to experiment with different architecture choices (layer/node combinations), optimizers (Adam, SGD, RMSprop), and activation functions (ReLU, tanh, sigmoid).  
 
 ### Building the Dataset  
 - Instead of a pre-loaded dataset, students created their own:  
   - Digits (0–9) were drawn on index cards.  
   - Each card was placed under the Arduino’s camera.  
-  - Image capture was triggered by pressing **reset + onboard buttons**.  
+  - Image capture was triggered by pressing reset + onboard buttons.  
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/numbers.jpg" 
@@ -118,14 +118,14 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 
 ### Testing and Results  
 - Predictions were displayed directly in the Arduino Serial Monitor.  
-- Each team tested their models on a **set of 8–10 digit cards**.  
+- Each team tested their models on a set of 8–10 digit cards.  
 
-**Key Takeaways:**  
+Key Takeaways:  
 - Certain digits (like 4, 7, 9) were harder to classify consistently.  
-- Larger networks improved accuracy but risked **overfitting** on the small dataset.  
+- Larger networks improved accuracy but risked overfitting on the small dataset.  
 - Students saw how changes in neurons, layers, and optimizers impacted performance.  
 
-**Reflection Questions:**  
+Reflection Questions:  
 - Which digits were hardest to classify?  
 - What happened when the first layer grew from 100 to 700 neurons?  
 - How many digits did your team classify correctly out of 10?  
@@ -134,9 +134,9 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 
 ## Outcomes  
 
-The camp provided students with a **hands-on introduction** to optimization, neural networks, and TinyML.  
+The camp provided students with a hands-on introduction* to optimization, neural networks, and TinyML.  
 
-- **Task 1** (binary shapes): demonstrated how gradient descent and learning rate choices affect optimization.  
-- **Task 2** (digits): extended to deeper models and showed the limits of on-device ML.  
+- Task 1 (binary shapes): demonstrated how gradient descent and learning rate choices affect optimization.  
+- Task 2 (digits): extended to deeper models and showed the limits of on-device ML.  
 
-Overall, the project bridged **optimization theory** with **practical embedded ML deployment**, offering students both intuition and experience in how AI systems are built and tested in real-world settings.  
+Overall, the project bridged optimization theory with practical embedded ML deployment, offering students both intuition and experience in how AI systems are built and tested in real-world settings.  
