@@ -129,7 +129,6 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 - Which digits were hardest to classify?  
 - What happened when the first layer grew from 100 to 700 neurons?  
 - How many digits did your team classify correctly out of 10?  
-
 ---
 
 
