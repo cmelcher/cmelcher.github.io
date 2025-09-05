@@ -92,20 +92,32 @@ Reflection Questions:
 This activity introduced students to the full ML workflow: data collection, labeling, training, optimization, and testing.  
 
 
-## Task 2: Handwritten Digit Classification (MNIST on Arduino)
+## Task 2: Handwritten Digit Classification (MNIST on Arduino)  
 
-### Goal  
-Students used a training file that pre-trained a neural network on the full MNIST dataset. The trained weights were then exported and deployed to the Arduino Nano 33 BLE Sense, where students could test the model in real time.
+In the second activity, students extended their work to a multi-class problem: recognizing handwritten digits (0–9).  
+The goal was to deploy a small neural network, trained on the MNIST dataset, onto the Arduino Nano 33 BLE Sense and test its performance on student-drawn digits.  
 
-### Workflow  
-- The training file produced a quantized model with learned weights from MNIST.  
-- This model was deployed to the Arduino through `handwritten_digit_recognition.ino`.  
+### Step 1: Train the Model  
+Students opened and ran the `training_MNIST.py` file, which pre-trained a simple neural network on the full MNIST dataset.  
+The training script exported a quantized version of the model (`mnist_model_quant.h`) for deployment.  
 
-### Using the dataset  
-- Students created a small test set by drawing digits 0–9 on index/sticker cards and holding them over the camera.  
-- On-device capture and classification flow:  
-  - Press the reset button, then press the onboard button to capture and classify.  
-  - Read the predicted digit from the Serial Monitor (and/or LED blinks in some builds).  
+<p align="center">  
+  <img src="/assets/tinyml/summer2025/training_mnist.png" alt="Training MNIST script" style="width:40%;"><br>  
+  <em>Training script for MNIST model.</em>  
+</p>  
+
+### Step 2: Deploy to Arduino  
+The exported model was then loaded into the Arduino through the file `handwritten_digit_recognition.ino`.  
+This allowed the board to run the trained network locally and make predictions in real time.  
+
+<p align="center">  
+  <img src="/assets/tinyml/summer2025/arduino_digit.png" alt="Arduino digit recognition sketch" style="width:40%;"><br>  
+  <em>Arduino sketch used to deploy the MNIST model.</em>  
+</p>  
+
+### Step 3: Create a Test Set  
+Students drew their own digits (0–9) on index or sticker cards. Each card contained a single, clearly written digit centered on a white background.  
+Cards were placed one at a time over the Arduino camera to create a small test set.  
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/numbers.jpg" 
@@ -114,17 +126,15 @@ Students used a training file that pre-trained a neural network on the full MNIS
   <em>Example of handwritten digit card used for Task 2.</em>
 </p>
 
-### Testing and results  
-- Each team evaluated on a small held-out set of 8–10 digit cards and recorded accuracy.  
-- Observations students discussed:  
-  - Some digits (often 4, 7, 9) were trickier due to handwriting variability.  
-  - Even accurate models can misclassify when test images differ from MNIST (stroke thickness, alignment, lighting).  
+### Step 4: Test the Model  
+To test, students used the reset and onboard buttons to capture each image. Predictions appeared in the Arduino Serial Monitor.  
 
-### Reflection questions  
-- Which digits were most error-prone with your handwritten style?  
-- How sensitive was classification to placement, lighting, or stroke thickness?  
-- Out of 10, how many did your setup classify correctly?  
+Reflection Questions:  
+- Which digits were classified correctly, and which caused errors?  
+- Did poorly written or unusual digits reduce accuracy?  
+- How many images out of 10 did your model classify correctly?  
 
+This activity introduced students to deploying and testing a pre-trained model under real-world conditions. They also experimented with editing the training script, changing the number of neurons and layers (up to 4 layers and 900 neurons) to see how architecture choices affect accuracy and overfitting:contentReference[oaicite:1]{index=1}.  
 
 
 ## Outcomes  
