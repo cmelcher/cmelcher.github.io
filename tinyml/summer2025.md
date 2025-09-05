@@ -94,28 +94,18 @@ This activity introduced students to the full ML workflow: data collection, labe
 
 ## Task 2: Handwritten Digit Classification (MNIST on Arduino)
 
-### Goal
-Students deployed a pre-trained, quantized MNIST model to the Arduino Nano 33 BLE Sense to recognize handwritten digits (0–9) in real time.
+### Goal  
+Students used a training file that pre-trained a neural network on the full MNIST dataset. The trained weights were then exported and deployed to the Arduino Nano 33 BLE Sense, where students could test the model in real time.
 
-### Model pipeline (done beforehand)
-- Train a small Keras CNN-free MLP on MNIST:
-  - Input (28×28×1) → Flatten → Dense(64, relu) → Dense(16, relu) → Dense(10, softmax)
-  - Optimizer: Adam; loss: sparse_categorical_crossentropy; batch_size: 128; epochs: 10
-- Post-training quantization to int8 with a representative dataset (≈1000 samples) via TFLite:
-  - `converter.optimizations = [tf.lite.Optimize.DEFAULT]`
-  - `converter.representative_dataset = representative_data_gen`
-  - `converter.target_spec.supported_ops = [tf.lite.OpsSet.TFLITE_BUILTINS_INT8]`
-  - `converter.inference_input_type = tf.int8`, `converter.inference_output_type = tf.int8`
-- Export artifacts:
-  - Save the TFLite model as `mnist_model_int8_relu.tflite`
-  - Convert bytes to a C array header and save as `mnist_model_quant.h`
-- Deploy by including the header in the Arduino sketch (`handwritten_digit_recognition.ino`) and flashing the board. :contentReference[oaicite:0]{index=0}
+### Workflow  
+- The training file produced a quantized model with learned weights from MNIST.  
+- This model was deployed to the Arduino through `handwritten_digit_recognition.ino`.  
 
-### Using the dataset
-- Students created a small test set by drawing digits 0–9 on index/sticker cards and holding them over the camera.
-- On-device capture and classification flow:
-  - Press the reset button, then press the onboard button to capture and classify.
-  - Read the predicted digit from the Serial Monitor (and/or LED blinks in some builds). :contentReference[oaicite:1]{index=1}
+### Using the dataset  
+- Students created a small test set by drawing digits 0–9 on index/sticker cards and holding them over the camera.  
+- On-device capture and classification flow:  
+  - Press the reset button, then press the onboard button to capture and classify.  
+  - Read the predicted digit from the Serial Monitor (and/or LED blinks in some builds).  
 
 <p align="center">
   <img src="/assets/tinyml/summer2025/numbers.jpg" 
@@ -124,16 +114,16 @@ Students deployed a pre-trained, quantized MNIST model to the Arduino Nano 33 BL
   <em>Example of handwritten digit card used for Task 2.</em>
 </p>
 
-### Testing and results
-- Each team evaluated on a small held-out set of 8–10 digit cards and recorded accuracy. :contentReference[oaicite:2]{index=2}
-- Observations students discussed:
-  - Some digits (often 4, 7, 9) were trickier due to handwriting variability.
-  - Even accurate models can misclassify when test images differ from MNIST (stroke thickness, alignment, lighting).
+### Testing and results  
+- Each team evaluated on a small held-out set of 8–10 digit cards and recorded accuracy.  
+- Observations students discussed:  
+  - Some digits (often 4, 7, 9) were trickier due to handwriting variability.  
+  - Even accurate models can misclassify when test images differ from MNIST (stroke thickness, alignment, lighting).  
 
-### Reflection questions
-- Which digits were most error-prone with your handwritten style?
-- How sensitive was classification to placement, lighting, or stroke thickness?
-- Out of 10, how many did your setup classify correctly? :contentReference[oaicite:3]{index=3}
+### Reflection questions  
+- Which digits were most error-prone with your handwritten style?  
+- How sensitive was classification to placement, lighting, or stroke thickness?  
+- Out of 10, how many did your setup classify correctly?  
 
 
 
