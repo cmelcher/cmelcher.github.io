@@ -89,7 +89,7 @@ The `testing_binary.py` script displayed predictions in real time.
 - How many images did your model classify correctly?  
 - Were some drawings harder to classify?  
 
-This activity introduced students to the **full machine learning workflow**: data collection, labeling, training, optimization, and evaluation.  
+This activity introduced students to the full ML workflow: data collection, labeling, training, optimization, and testing.  
 
 ## Task 2: Handwritten Digit Classification (MNIST on Arduino)  
 
@@ -101,7 +101,7 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 - TinyML hardware limitations forced creative design choices:  
   - ≤ **4 hidden layers**  
   - ≤ **900 neurons total**  
-- Students experimented with different **optimizers** (Adam, SGD, RMSprop) and **activation functions** (ReLU, tanh, sigmoid).  
+- We allowed students to experiment with different architecture choices (layer/node combinations), optimizers (Adam, SGD, RMSprop), and activation functions (ReLU, tanh, sigmoid).  
 
 ### Building the Dataset  
 - Instead of a pre-loaded dataset, students created their own:  
