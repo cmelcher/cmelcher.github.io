@@ -10,7 +10,7 @@ Advisor: Dr. Erfan Yazdandoost Hamedani
 
 ## Context
 
-During the Summer of 2025, Dr. Yazdandoost Hamedani and I ran an optimization and computing session for high school students from Tucson that aimed to introduce students to optimization basics, machine learning (ML), and coding. Our project session was part of a one-day science and engineering summer camp organized by the University of Arizona. 
+During the summer of 2025, Dr. Yazdandoost Hamedani and I ran an optimization and computing session for high school students from Tucson that aimed to introduce students to optimization basics, machine learning (ML), and coding. Our project session was part of a one-day science and engineering summer camp organized by the University of Arizona. 
 
 The goal was to spark interest in math, computing, and engineering by showing how optimization and machine learning power technologies students encounter every day. Students came in with no assumed background in calculus or coding. 
 
