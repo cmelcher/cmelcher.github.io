@@ -118,11 +118,7 @@ Students built and deployed a neural network on the Arduino Nano 33 BLE Sense to
 
 ### Testing and Results  
 - Predictions were displayed directly in the Arduino Serial Monitor.  
-- Each team tested their models on a set of 8–10 digit cards.  
-
-Key Takeaways:  
-- Certain digits (like 4, 7, 9) were harder to classify consistently.  
-- Larger networks improved accuracy but risked overfitting on the small dataset.  
+- Each team tested their models on a set of 8–10 digit cards.   
 - Students saw how changes in neurons, layers, and optimizers impacted performance.  
 
 Reflection Questions:  
@@ -140,4 +136,4 @@ The camp provided students with a hands-on introduction to optimization, neural 
 - Task 1 (binary shapes): demonstrated how gradient descent and learning rate choices affect optimization.  
 - Task 2 (digits): extended to deeper models and showed the limits of on-device ML.  
 
-Overall, the project bridged optimization theory with practical embedded ML deployment, offering students both intuition and experience in how AI systems are built and tested in real-world settings.  
+Overall, the project bridged theory with practical experience, offering students both intuition and experience in how ML/AI systems are built and tested in real-world settings.  
