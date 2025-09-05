@@ -135,7 +135,7 @@ Reflection Questions:
 
 ## Outcomes  
 
-The camp provided students with a hands-on introduction* to optimization, neural networks, and TinyML.  
+The camp provided students with a hands-on introduction to optimization, neural networks, and TinyML.  
 
 - Task 1 (binary shapes): demonstrated how gradient descent and learning rate choices affect optimization.  
 - Task 2 (digits): extended to deeper models and showed the limits of on-device ML.  
