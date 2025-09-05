@@ -48,6 +48,7 @@ In this session, students used TinyML to classify shapes and handwritten digits 
 </p>
 
 ---
+## Task 1: Binary Classification
 
 In the first activity, students worked with a simple binary image classifier using the Arduino Nano 33 BLE Sense.  
 The goal was to train a model that could accurately predict whether a drawing was a **star** or a **circle**.  
