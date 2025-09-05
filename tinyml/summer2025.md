@@ -27,7 +27,7 @@ The Arduino Nano 33 BLE Sense is a small, low-power microcontroller designed for
 - Main use is TinyML deployment, enabling on-device inference with low energy and resource requirements.  
 
 <p align="center">
-  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:40%;"><br>
+  <img src="/assets/tinyml/summer2025/arduinopic.jpeg" alt="Arduino Nano 33 BLE Sense kit" style="width:55%;"><br>
   <em>Arduino Nano 33 BLE Sense board.</em>
 </p>
 
@@ -43,7 +43,7 @@ TinyMl (Tiny Machine Learning) is an environment for deploying ML models on micr
 
 In this session, students used TinyML to classify shapes and handwritten digits in real time directly on the Arduino board.  
 <p align="center">
-  <img src="/assets/tinyml/summer2025/kitsetup0.jpeg" alt="kitsetup" style="width:40%;"><br>
+  <img src="/assets/tinyml/summer2025/kitsetup0.jpeg" alt="kitsetup" style="width:55%;"><br>
   <em>Setup for the two activities</em>
 </p>
 
@@ -57,7 +57,7 @@ The goal was to train a model that could accurately predict whether a drawing wa
 Students drew 5–10 stars and 5–10 circles on sticker cards. These were placed one at a time over the Arduino’s built-in camera to capture training images.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" style="width:40%;"><br>  
+  <img src="/assets/tinyml/summer2025/star.jpg" alt="Star card example" style="width:55%;"><br>  
   <em>Example student star drawing used for training.</em>  
 </p>  
 
@@ -65,7 +65,7 @@ Students drew 5–10 stars and 5–10 circles on sticker cards. These were place
 A pre-written Python script (`reading_image.py`) captured images from the Arduino and saved them with labels. Students updated the label parameter to distinguish between stars and circles.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/reading_binary.png" alt="Python script for image capture" style="width:40%;"><br><em>Script for capturing and labeling images.</em>  
+  <img src="/assets/tinyml/summer2025/reading_binary.png" alt="Python script for image capture" style="width:55%;"><br><em>Script for capturing and labeling images.</em>  
 </p>  
 
 ### Step 3: Train the Model  
@@ -73,7 +73,7 @@ Students then ran `training_binary.py` to train a binary classifier.
 We had the students experiment with changing the learning rate of the gradient descent method, observing how this choice affects optimization and convergence of the algorithm.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/training_binary.png" alt="Training script" style="width:40%;"><br><em>Training script for binary classification.</em>  
+  <img src="/assets/tinyml/summer2025/training_binary.png" alt="Training script" style="width:55%;"><br><em>Training script for binary classification.</em>  
 </p>  
 
 ### Step 4: Test the Model  
@@ -81,7 +81,7 @@ Finally, students tested their models using new drawings, including some borrowe
 The `testing_binary.py` script displayed predictions in real time.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" style="width:40%;"><br><em>Testing script used to evaluate classification results.</em>  
+  <img src="/assets/tinyml/summer2025/testing_binary.png" alt="Testing script" style="width:55%;"><br><em>Testing script used to evaluate classification results.</em>  
 </p>  
 
 Reflection Questions:  
@@ -111,7 +111,7 @@ The exported model was then loaded into the Arduino through the file `handwritte
 This allowed the board to run the trained network locally and make predictions in real time.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/handwritten_image.png" alt="Arduino digit recognition sketch" style="width:40%;"><br>  
+  <img src="/assets/tinyml/summer2025/handwritten_image.png" alt="Arduino digit recognition sketch" style="width:55%;"><br>  
   <em>Arduino sketch used to deploy the MNIST model.</em>  
 </p>  
 
