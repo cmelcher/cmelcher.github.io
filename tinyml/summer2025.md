@@ -102,7 +102,7 @@ Students opened and ran the `training_MNIST.py` file, which pre-trained a simple
 The training script exported a quantized version of the model (`mnist_model_quant.h`) for deployment.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/multiclass_training.png" alt="Training MNIST script" style="width:40%;"><br>  
+  <img src="/assets/tinyml/summer2025/multiclass_training.png" alt="Training MNIST script" style="width:55%;"><br>  
   <em>Training script for MNIST model.</em>  
 </p>  
 
