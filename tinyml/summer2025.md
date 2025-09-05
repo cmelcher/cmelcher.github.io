@@ -102,7 +102,7 @@ Students opened and ran the `training_MNIST.py` file, which pre-trained a simple
 The training script exported a quantized version of the model (`mnist_model_quant.h`) for deployment.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/training_mnist.png" alt="Training MNIST script" style="width:40%;"><br>  
+  <img src="/assets/tinyml/summer2025/multiclass_training.png" alt="Training MNIST script" style="width:40%;"><br>  
   <em>Training script for MNIST model.</em>  
 </p>  
 
@@ -111,7 +111,7 @@ The exported model was then loaded into the Arduino through the file `handwritte
 This allowed the board to run the trained network locally and make predictions in real time.  
 
 <p align="center">  
-  <img src="/assets/tinyml/summer2025/arduino_digit.png" alt="Arduino digit recognition sketch" style="width:40%;"><br>  
+  <img src="/assets/tinyml/summer2025/handwritten_image.png" alt="Arduino digit recognition sketch" style="width:40%;"><br>  
   <em>Arduino sketch used to deploy the MNIST model.</em>  
 </p>  
 
