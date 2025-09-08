@@ -16,6 +16,13 @@ The goal was to spark interest in math, computing, and engineering by showing ho
 
 We introduced key concepts like derivatives, gradients, microcontrollers, classification (both binary and multi-class), and neural networks. During the session we had students adjust and test pre-built small classification models (both binary and multi) directly on Arduino Nano 33 BLE Sense kits, gaining experience with how math and computing ideas translate directly into real world applications.
 
+Code for both projects as well as the slides and handout we gave students can be found here:
+<p align="center">
+  <a href="https://github.com/cmelcher/summer2025-code" target="_blank">
+    <img src="https://img.shields.io/badge/View%20Code-GitHub-blue?style=for-the-badge&logo=github" alt="View Materials">
+  </a>
+</p>
+
 
 ---
 
