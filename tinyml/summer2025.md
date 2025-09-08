@@ -18,7 +18,7 @@ We introduced key concepts like derivatives, gradients, microcontrollers, classi
 
 Code for both projects as well as the slides and handout we gave students can be found here:
 <p align="center">
-  <a href="https://github.com/cmelcher/summer2025-code" target="_blank">
+  <a href="https://github.com/cmelcher/summer2025code" target="_blank">
     <img src="https://img.shields.io/badge/View%20Code-GitHub-blue?style=for-the-badge&logo=github" alt="View Materials">
   </a>
 </p>
