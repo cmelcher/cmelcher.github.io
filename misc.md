@@ -4,13 +4,6 @@ title: "Misc"
 permalink: /misc/
 author_profile: true
 ---
-
-### Outside of research
-
-I enjoy a mix of music, analog media, and occasional weird side projects outside of optimization.
-
----
-
 In my free time, I DJ for <a href="https://kxci.org" target="_blank">KXCI 91.3 FM</a>, Tucson’s nonprofit community radio station.
 
 You can listen to some of my past radio mixes here:  
