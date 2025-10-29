@@ -18,11 +18,11 @@ author_profile: true
   <li>
     <span class="course-title">Graduate Teaching Assistant</span> — MATH 263: Introduction to Statistics and Biostatistics  
     <span class="inst">University of Arizona</span> <span class="teach-meta">(Spring 2025)</span>
-    <div>Led weekly discussion sections, held office hours, and supported course assessment and student success in an applied statistics course for STEM majors.</div>
+    <div>Led weekly discussion sections, held office hours, and supported course assessment and student success in an applied statistics course for pre-med students.</div>
   </li>
   <li>
     <span class="course-title">Graduate Teaching Assistant</span> — MATH 112: College Algebra  
     <span class="inst">University of Arizona</span> <span class="teach-meta">(Fall 2022 – Spring 2023)</span>
-    <div>Designed and graded homework, conducted review sessions, collaborated on course coordination. <em>Honorable Mention — Mathematics Graduate TA Award (Spring 2023)</em>.</div>
+    <div>Help design and grade homework, lead review sessions, collaborated on course coordination. <em>Honorable Mention — Mathematics Department Graduate TA Award (Spring 2023)</em>.</div>
   </li>
 </ul>
