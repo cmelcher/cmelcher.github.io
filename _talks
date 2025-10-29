@@ -1,1 +1,29 @@
+---
+layout: archive
+title: "Talks and presentations"
+permalink: /talks/
+author_profile: true
+---
+
+{% assign talks = site.talks | sort: "date" | reverse %}
+{% assign current_year = "" %}
+
+{% for t in talks %}
+  {% assign y = t.date | date: "%Y" %}
+  {% if y != current_year %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h3 class="talks-year">{{ y }}</h3>
+    <ul class="talks-list">
+    {% assign current_year = y %}
+  {% endif %}
+
+  <li class="talk-item">
+    <strong>{{ t.title }}</strong> — <em>{{ t.venue }}</em>, {{ t.location }}
+    <span class="talk-meta"> ({{ t.date | date: "%b %Y" }}{% if t.type %}, {{ t.type }}{% endif %})</span>
+    {% if t.description %}
+      <div class="talk-desc">{{ t.description }}</div>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
 
