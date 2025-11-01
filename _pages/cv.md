@@ -7,8 +7,6 @@ author_profile: true
 
 {% assign cv_url = "/assets/cv/cmelcher_cv1025.pdf" | relative_url %}
 
-<p><a class="btn btn--primary" href="{{ cv_url }}">Download my CV (PDF)</a></p>
-
 <!-- Embedded PDF viewer -->
 <div>
   <object
@@ -19,5 +17,5 @@ author_profile: true
 </div>
 
 <p class="text-small">
-  If the PDF doesn’t display, <a href="{{ cv_url }}">open it in a new tab</a>.
+  <a href="{{ cv_url }}">Download my CV</a>
 </p>
