@@ -1,18 +1,21 @@
 ---
-layout: page
+layout: single
 title: CV
 permalink: /cv/
+author_profile: true      # shows the left sidebar/profile
+toc: false
 ---
 
-{% assign cv_url = "/assets/cv/cmelcher_cv1025.pdf" | relative_url %}
+{% assign cv_url = "/assets/cv/cmelcher_cv1025" | relative_url %}
 
-<p><a class="btn" href="{{ cv_url }}">Download my CV (PDF)</a></p>
+<p>
+  <a class="btn btn--primary" href="{{ cv_url }}">Download my CV (PDF)</a>
+</p>
 
-<object
-  data="{{ cv_url }}"
-  type="application/pdf"
-  width="100%"
-  height="1000">
-  <p>Your browser can’t display PDFs inline.
-     <a href="{{ cv_url }}">Download the PDF</a> instead.</p>
-</object>
+<div class="pdf-embed">
+  <object data="{{ cv_url }}#view=FitH" type="application/pdf"></object>
+</div>
+
+<p class="text-small">
+  If the PDF doesn’t display, <a href="{{ cv_url }}">open it in a new tab</a>.
+</p>
