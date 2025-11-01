@@ -4,15 +4,15 @@ title: CV
 permalink: /cv/
 ---
 
-{% assign cv_url = "/assets/cv/cmelcher_cv1025" | relative_url %}
+{% assign cv_url = "/assets/cv/cmelcher_cv1025.pdf" | relative_url %}
 
-[Download my CV (PDF)]({{ cv_url }}){: .btn .btn-primary }
+<p><a class="btn" href="{{ cv_url }}">Download my CV (PDF)</a></p>
 
 <object
-  data="{{ cv_url }}#toolbar=0&navpanes=0"
+  data="{{ cv_url }}"
   type="application/pdf"
   width="100%"
-  height="900">
+  height="1000">
   <p>Your browser can’t display PDFs inline.
      <a href="{{ cv_url }}">Download the PDF</a> instead.</p>
 </object>
