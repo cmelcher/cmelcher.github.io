@@ -5,12 +5,22 @@ permalink: /publications/
 author_profile: true
 ---
 
+## Accepted / Under Review
+
+### Semi-infinite Nonconvex Constrained Min–Max Optimization  
+**Cody Melcher**, Zeinab Alizadeh, Lindsey Hiett, Afrooz Jalilzadeh, Erfan Yazdandoost Hamedani  
+*Advances in Neural Information Processing Systems (NeurIPS)*, 2025 — Poster  
+[arXiv:2510.12007](https://arxiv.org/abs/2510.12007)
+
+### Linear Convergence of a Unified Primal–Dual Algorithm for Convex–Concave Saddle Point Problems with Quadratic Growth  
+**Cody Melcher**, Afrooz Jalilzadeh, Erfan Yazdandoost Hamedani  
+*Optimization Letters*, first revision  
+[arXiv:2510.11990](https://arxiv.org/abs/2510.11990)
+
+---
+
 ## Working Papers
 
-- **C. Melcher**, Z. Alizadeh, L. Hiett, A. Jalilzadeh, and E. Yazdandoost Hamedani.  
-  *Semi-Infinite Nonconvex Constrained Min–Max Optimization.*  
-  [arXiv:2510.12007](https://arxiv.org/abs/2510.12007), 2025.
-
-- **C. Melcher**, A. Jalilzadeh, and E. Yazdandoost Hamedani.  
-  *Linear Convergence of a Unified Primal–Dual Algorithm for Convex–Concave Saddle Point Problems with Quadratic Growth.*  
-  [arXiv:2510.11990](https://arxiv.org/abs/2510.11990), 2025.
+### Convergence of Primal–Dual Algorithms for Min–Max Semi-Infinite Programs under Concavity  
+**Cody Melcher**, Afrooz Jalilzadeh, Erfan Yazdandoost Hamedani  
+Working paper
