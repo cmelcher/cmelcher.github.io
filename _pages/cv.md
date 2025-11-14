@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: true
 ---
 
-{% assign cv_url = "/assets/cv/cmelcher_cv1025.pdf" | relative_url %}
+{% assign cv_url = "/assets/cv/cmelcher_CV.pdf" | relative_url %}
 
 <style>
   /* keep the footer from crowding the embed */
