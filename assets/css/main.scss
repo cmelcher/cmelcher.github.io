@@ -41,3 +41,10 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+.page__footer {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0.75rem 0 !important;  // smaller top/bottom padding
+  margin-top: 1rem !important;    // small gap above footer
+}
