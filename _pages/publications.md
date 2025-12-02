@@ -21,6 +21,6 @@ author_profile: true
 
 ## Working Papers
 
-### Convergence of Primal–Dual Algorithms for Min–Max Semi-Infinite Programs under Concavity  
-**Cody Melcher**, Afrooz Jalilzadeh, Erfan Yazdandoost Hamedani  
+### Max Structured Non-smooth, Non-convex Constrained Optimization 
+**Cody Melcher** and Erfan Yazdandoost Hamedani  
 Working paper
