@@ -14,7 +14,7 @@ author_profile: true
 
 ### Linear Convergence of a Unified Primal–Dual Algorithm for Convex–Concave Saddle Point Problems with Quadratic Growth  
 **Cody Melcher**, Afrooz Jalilzadeh, Erfan Yazdandoost Hamedani  
-*Optimization Letters*, first revision  
+*Optimization Letters*, second revision  
 [arXiv:2510.11990](https://arxiv.org/abs/2510.11990)
 [Paper Code](https://github.com/cmelcher/2qfg2qgg)
 
