@@ -17,7 +17,7 @@ author_profile: true
 *Optimization Letters*, first revision  
 [arXiv:2510.11990](https://arxiv.org/abs/2510.11990)
 
-[Code](https://github.com/cmelcher/2qfg2qgg)
+[Paper Code](https://github.com/cmelcher/2qfg2qgg)
 
 ---
 
